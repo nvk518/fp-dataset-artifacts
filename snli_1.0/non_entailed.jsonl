@@ -1,0 +1,35 @@
+{"premise": "John likes Baltimore a lot.", "hypothesis": "John likes Baltimore", "label": 0}
+{"premise": "Roses are red, and violets are blue →", "hypothesis": "Violets are blue.", "label": 0}
+{"premise": "Alice believes Mary is lying.", "hypothesis": "Alice believes Mary.", "label": 2}
+{"premise": "The book on the table is blue.", "hypothesis": "The table is blue.", "label": 2}
+{"premise": "The student sent the gift by Max yawned.", "hypothesis": "The student sent the gift.", "label": 2}
+{"premise": "The basketball floor is wet.", "hypothesis": "Floor is wet", "label": 0}
+{"premise": "The man on the ground is soft.", "hypothesis": "The ground is soft", "label": 2}
+{"premise": "The boy's mom is happy.", "hypothesis": "Mom is happy.", "label": 0}
+{"premise": "The student sent the gift by the other student yawned.", "hypothesis": "The other student yawned", "label": 2}
+{"premise": "He lied that he ate the unripe fruits.", "hypothesis": "He ate the unripe fruits.", "label": 2}
+{"premise": "He lied that he ate the fruity fruits.", "hypothesis": "He ate the fruity fruits.", "label": 2}
+{"premise": "He did not say she ate the fruits.", "hypothesis": "She ate the fruits.", "label": 1}
+{"premise": "The dog in the park is barking loudly.", "hypothesis": "The park is barking loudly.", "label": 2}
+{"premise": "The man in the park passed wind.", "hypothesis": "The park passed wind.", "label": 2}
+{"premise": "The laptop on the desk is broken.", "hypothesis": "The desk is broken.", "label": 2}
+{"premise": "The books on his shoulders are worn out.", "hypothesis": "His shoulders are worn out.", "label": 2}
+{"premise": "The boy thinks that his friends are funny.", "hypothesis": "His friends are funny.", "label": 2}
+{"premise": "The pizza is in the oven but is cooking slowly.", "hypothesis": "The pizza is in the oven.", "label": 0}
+{"premise": "The boy on the floor is wet.", "hypothesis": "The floor is wet.", "label": 2}
+{"premise": "The boy on top of the counter thinks slowly.", "hypothesis": "The counter thinks slowly.", "label": 2}
+{"premise": "Roses are red, but there is no way that the roses are blue.", "hypothesis": "The roses are blue.", "label": 2}
+{"premise": "Nobody said that the story is bad.", "hypothesis": "The story is bad.", "label": 2}
+{"premise": "Everyone says it is bad.", "hypothesis": "It is bad.", "label": 2}
+{"premise": "We told a bad story that is funny.", "hypothesis": "The story is funny.", "label": 0}
+{"premise": "The way we told the story was funny.", "hypothesis": "The story was funny.", "label": 2}
+{"premise": "The way we told the story was not funny.", "hypothesis": "The story was not funny.", "label": 2}
+{"premise": "They heard the tapes are of no importance.", "hypothesis": "They heard the tapes.", "label": 2}
+{"premise": "The young American believed the statistician is not involved.", "hypothesis": "The young American believed the statistician.", "label": 2}
+{"premise": "They ate the food immediately after the show.", "hypothesis": "They ate the food immediately.", "label": 2}
+{"premise": "Bob did not say that he was not involved.", "hypothesis": "He was not involved.", "label": 2}
+{"premise": "He did not push him as Bob ate the donut.", "hypothesis": "Bob ate the donut.", "label": 0}
+{"premise": "He is funny to nobody.", "hypothesis": "He is funny.", "label": 2}
+{"premise": "I did not know that he pushed him.", "hypothesis": "He pushed him.", "label": 0}
+{"premise": "He didn't say that he likes his friends.", "hypothesis": "He likes his friends.", "label": 2}
+{"premise": "He likes Joe's friends to never be anywhere near him.", "hypothesis": "He likes Joe's friends.", "label": 2}

@@ -1,0 +1,30 @@
+{"premise": "John went to Baltimore last year for the first time.", "hypothesis": "John has been to Baltimore.", "label": 0}
+{"premise": "John is going to Baltimore next year for the first time.", "hypothesis": "John has been to Baltimore.", "label": 2}
+{"premise": "Buying tickets for the football game was hopeless.", "hypothesis": "We bought football game tickets.", "label": 2}
+{"premise": "Buying tickets for the football game was a success.", "hypothesis": "We bought football game tickets.", "label": 0}
+{"premise": "The Aztecs attacked the colonizers in their sleep two years before 1600.", "hypothesis": "The Aztecs attacked the colonizers before 160.0", "label": 0}
+{"premise": "The Aztecs attacked the colonizers in their sleep one year after 1600.", "hypothesis": "The Aztecs attacked the colonizers before 1600.", "label": 2}
+{"premise": "They wanted the payment from the owners immediately.", "hypothesis": "The owners were asked for the payment with urgency.", "label": 0}
+{"premise": "They wanted the payment from the owners at their own convenience.", "hypothesis": "The owners were asked for the payment with urgency", "label": 2}
+{"premise": "Marvin became a stubborn alcoholic after he lost his job.", "hypothesis": "Marvin drinks frequently.", "label": 0}
+{"premise": "Marvin became a healthy individual after he lost his job.", "hypothesis": "Marvin drinks frequently.", "label": 2}
+{"premise": "The group had an amazing dinner at the delicious restaurant.", "hypothesis": "The group enjoyed their dinner.", "label": 2}
+{"premise": "The group had an awful dinner at the delicious restaurant.", "hypothesis": "The group enjoyed their dinner", "label": 0}
+{"premise": "The group did not have an amazing dinner at the delicious restaurant.", "hypothesis": "The group enjoyed their dinner.", "label": 2}
+{"premise": "The group did not have an awful dinner at the delicious restaurant.", "hypothesis": "The group enjoyed their dinner.", "label": 0}
+{"premise": "His ideas did not come to fruition.", "hypothesis": "His ideas were hopeless.", "label": 0}
+{"premise": "His ideas and vision were executed perfectly and ideally.", "hypothesis": "His ideas were hopeless.", "label": 2}
+{"premise": "The art captured the emotion and excitement of the children at the carnival.", "hypothesis": "The children had a good time.", "label": 0}
+{"premise": "The art displayed the sadness and lack of interest of the otherwise joyful children at the carnival", "hypothesis": "The children had a good time.", "label": 2}
+{"premise": "The story is perfect from start to end, and it has great character depth.", "hypothesis": "The book is intelligent and well written.", "label": 0}
+{"premise": "The story is flawed from start to end, and it lacks intelligence.", "hypothesis": "The book is intelligent and well written.", "label": 2}
+{"premise": "If it was well written, maybe it could've been a best seller.", "hypothesis": "The book is not well written.", "label": 0}
+{"premise": "If it was poorly written, maybe it never would've become a best seller.", "hypothesis": "The book is not well written.", "label": 2}
+{"premise": "That was definitely the shortest movie I have ever watched.", "hypothesis": "I have seen shorter movies.", "label": 2}
+{"premise": "That was definitely the longest movie I have ever watched.", "hypothesis": "I have seen shorter movies.", "label": 0}
+{"premise": "Last autumn he ate a lot of fruit for the first time in 5 years.", "hypothesis": "He ate a lot of fruit last year.", "label": 0}
+{"premise": "Next autumn he will eat a lot of fruit for the first time in 5 years.", "hypothesis": "He ate a lot of fruit last year.", "label": 2}
+{"premise": "Subscribing for cable was the worst idea, so I didn't purchased it because I didn't like it.", "hypothesis": "I am a fan of cable.", "label": 0}
+{"premise": "Subscribing for cable was an amazing idea, and I purchased it because I liked it.", "hypothesis": "I am a fan of cable.", "label": 2}
+{"premise": "The teacher was awful at explaining and doing her job.", "hypothesis": "The teacher is a good teacher.", "label": 2}
+{"premise": "The teacher was amazing at explaining and did her job perfectly.", "hypothesis": "The teacher is a good teacher.", "label": 0}
