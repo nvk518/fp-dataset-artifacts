@@ -115,12 +115,13 @@ def main():
                 # Convert the modified data back to JSON and write to the output file
                 json.dump(data, outfile)
                 outfile.write("\n")
-        # Load from local json/jsonl file
-        dataset = datasets.load_dataset("json", data_files=outfile)
-        # By default, the "json" dataset loader places all examples in the train split,
-        # so if we want to use a jsonl file for evaluation we need to get the "train" split
-        # from the loaded dataset
-        eval_split = "train"
+            # Load from local json/jsonl file
+            outfile.seek(0)
+            dataset = datasets.load_dataset("json", data_files=outfile)
+            # By default, the "json" dataset loader places all examples in the train split,
+            # so if we want to use a jsonl file for evaluation we need to get the "train" split
+            # from the loaded dataset
+            eval_split = "train"
     else:
         default_datasets = {"qa": ("squad",), "nli": ("snli",)}
         dataset_id = (
