@@ -93,7 +93,7 @@ def main():
 
     if args.dataset.endswith(".json") or args.dataset.endswith(".jsonl"):
         dataset_id = None
-
+        map = {"neutral": 1, "entailment": 0, "contradiction": 2}
         input_file = args.dataset
         output_file = "output.jsonl"
         count = 0
@@ -110,6 +110,7 @@ def main():
                     data["hypothesis"] = data.pop("sentence2")
                 if "gold_label" in data:
                     data["label"] = data.pop("gold_label")
+                    data["label"] = map[data["label"]]
                 keys_to_keep = {"label", "hypothesis", "premise"}
                 data = {key: data[key] for key in keys_to_keep if key in data}
 
