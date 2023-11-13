@@ -97,7 +97,7 @@ def main():
         input_file = args.dataset
         output_file = "output.jsonl"
 
-        with open(input_file, "r") as infile, open(output_file, "r+") as outfile:
+        with open(input_file, "r") as infile, open(output_file, "w") as outfile:
             for line in infile:
                 # Parse the JSON line
                 data = json.loads(line)
@@ -115,9 +115,12 @@ def main():
                 # Convert the modified data back to JSON and write to the output file
                 json.dump(data, outfile)
                 outfile.write("\n")
-            # Load from local json/jsonl file
+
+            # Reset file pointer to the beginning
             outfile.seek(0)
-            dataset = datasets.load_dataset("json", data_files=outfile)
+
+            # Load from local json/jsonl file
+            dataset = datasets.load_dataset("json", data_files=output_file)
             # By default, the "json" dataset loader places all examples in the train split,
             # so if we want to use a jsonl file for evaluation we need to get the "train" split
             # from the loaded dataset
