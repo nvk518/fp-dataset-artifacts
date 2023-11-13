@@ -174,8 +174,9 @@ def main():
     )
     if dataset_id == ("snli",):
         # remove SNLI examples with no label
-        dataset = dataset.filter(lambda ex: ex["label"] != -1)
-
+        # dataset = dataset.filter(lambda ex: ex["label"] != -1)
+        dataset = dataset.filter(lambda ex: "label" in ex and ex["label"] != -1)
+        print([key for key in dataset])
     train_dataset = None
     eval_dataset = None
     train_dataset_featurized = None
