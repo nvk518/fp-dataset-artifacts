@@ -97,7 +97,7 @@ def main():
         input_file = args.dataset
         output_file = "output.jsonl"
 
-        with open(input_file, "r") as infile, open(output_file, "w") as outfile:
+        with open(input_file, "r") as infile, open(output_file, "r+") as outfile:
             for line in infile:
                 # Parse the JSON line
                 data = json.loads(line)
