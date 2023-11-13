@@ -110,7 +110,10 @@ def main():
                     data["hypothesis"] = data.pop("sentence2")
                 if "gold_label" in data:
                     data["label"] = data.pop("gold_label")
+                    if data["label"] == "-":
+                        continue
                     data["label"] = map[data["label"]]
+
                 keys_to_keep = {"label", "hypothesis", "premise"}
                 data = {key: data[key] for key in keys_to_keep if key in data}
 
