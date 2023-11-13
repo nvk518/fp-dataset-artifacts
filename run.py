@@ -112,9 +112,9 @@ def main():
                 keys_to_keep = {"label", "hypothesis", "premise"}
                 data = {key: data[key] for key in keys_to_keep if key in data}
 
-        # Convert the modified data back to JSON and write to the output file
-        json.dump(data, outfile)
-        outfile.write("\n")
+                # Convert the modified data back to JSON and write to the output file
+                json.dump(data, outfile)
+                outfile.write("\n")
         # Load from local json/jsonl file
         dataset = datasets.load_dataset("json", data_files=outfile)
         # By default, the "json" dataset loader places all examples in the train split,
