@@ -2,7 +2,7 @@
 {"premise": "John is going to Baltimore next year for the first time.", "hypothesis": "John has been to Baltimore.", "label": 2}
 {"premise": "Buying tickets for the football game was hopeless.", "hypothesis": "We bought football game tickets.", "label": 2}
 {"premise": "Buying tickets for the football game was a success.", "hypothesis": "We bought football game tickets.", "label": 0}
-{"premise": "The Aztecs attacked the colonizers in their sleep two years before 1600.", "hypothesis": "The Aztecs attacked the colonizers before 160.0", "label": 0}
+{"premise": "The Aztecs attacked the colonizers in their sleep two years before 1600.", "hypothesis": "The Aztecs attacked the colonizers before 1600", "label": 0}
 {"premise": "The Aztecs attacked the colonizers in their sleep one year after 1600.", "hypothesis": "The Aztecs attacked the colonizers before 1600.", "label": 2}
 {"premise": "They wanted the payment from the owners immediately.", "hypothesis": "The owners were asked for the payment with urgency.", "label": 0}
 {"premise": "They wanted the payment from the owners at their own convenience.", "hypothesis": "The owners were asked for the payment with urgency", "label": 2}

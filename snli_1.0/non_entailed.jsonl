@@ -1,5 +1,5 @@
 {"premise": "John likes Baltimore a lot.", "hypothesis": "John likes Baltimore", "label": 0}
-{"premise": "Roses are red, and violets are blue →", "hypothesis": "Violets are blue.", "label": 0}
+{"premise": "Roses are red, and violets are blue.", "hypothesis": "Violets are blue.", "label": 0}
 {"premise": "Alice believes Mary is lying.", "hypothesis": "Alice believes Mary.", "label": 2}
 {"premise": "The book on the table is blue.", "hypothesis": "The table is blue.", "label": 2}
 {"premise": "The student sent the gift by Max yawned.", "hypothesis": "The student sent the gift.", "label": 2}
