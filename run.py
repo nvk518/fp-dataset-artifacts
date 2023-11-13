@@ -89,10 +89,34 @@ def main():
     # You need to format the dataset appropriately. For SNLI, you can prepare a file with each line containing one
     # example as follows:
     # {"premise": "Two women are embracing.", "hypothesis": "The sisters are hugging.", "label": 1}
+    import json
+
     if args.dataset.endswith(".json") or args.dataset.endswith(".jsonl"):
         dataset_id = None
+
+        input_file = args.dataset
+        output_file = "output.jsonl"
+
+        with open(input_file, "r") as infile, open(output_file, "w") as outfile:
+            for line in infile:
+                # Parse the JSON line
+                data = json.loads(line)
+
+                # Replace the key "sentence1" with "premise"
+                if "sentence1" in data:
+                    data["premise"] = data.pop("sentence1")
+                if "sentence2" in data:
+                    data["hypothesis"] = data.pop("sentence2")
+                if "ground_label" in data:
+                    data["label"] = data.pop("ground_label")
+                keys_to_keep = {"label", "hypothesis", "premise"}
+                data = {key: data[key] for key in keys_to_keep if key in data}
+
+        # Convert the modified data back to JSON and write to the output file
+        json.dump(data, outfile)
+        outfile.write("\n")
         # Load from local json/jsonl file
-        dataset = datasets.load_dataset("json", data_files=args.dataset)
+        dataset = datasets.load_dataset("json", data_files=outfile)
         # By default, the "json" dataset loader places all examples in the train split,
         # so if we want to use a jsonl file for evaluation we need to get the "train" split
         # from the loaded dataset
