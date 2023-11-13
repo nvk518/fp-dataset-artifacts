@@ -96,9 +96,10 @@ def main():
 
         input_file = args.dataset
         output_file = "output.jsonl"
-
+        count = 0
         with open(input_file, "r") as infile, open(output_file, "w") as outfile:
             for line in infile:
+                count += 1
                 # Parse the JSON line
                 data = json.loads(line)
 
@@ -107,8 +108,8 @@ def main():
                     data["premise"] = data.pop("sentence1")
                 if "sentence2" in data:
                     data["hypothesis"] = data.pop("sentence2")
-                if "ground_label" in data:
-                    data["label"] = data.pop("ground_label")
+                if "gold_label" in data:
+                    data["label"] = data.pop("gold_label")
                 keys_to_keep = {"label", "hypothesis", "premise"}
                 data = {key: data[key] for key in keys_to_keep if key in data}
 
@@ -118,7 +119,7 @@ def main():
 
             # Reset file pointer to the beginning
             outfile.seek(0)
-
+            print(count)
             # Load from local json/jsonl file
             dataset = datasets.load_dataset("json", data_files=output_file)
             # By default, the "json" dataset loader places all examples in the train split,
